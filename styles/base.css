@@ -1,4 +1,4 @@
-/* Google Font setup */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -7,7 +7,6 @@ body {
     color: #333;
 }
 
-/* Header */
 header {
     background-color: #0d3b66;
     color: white;
@@ -25,7 +24,7 @@ header {
     color: #ffd60a;
 }
 
-/* Navigation */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -52,7 +51,7 @@ nav a:hover {
     transition: 0.3s;
 }
 
-/* Main layout */
+
 main {
     max-width: 900px;
     margin: 2rem auto;
@@ -61,7 +60,7 @@ main {
     gap: 1.5rem;
 }
 
-/* Card styling */
+
 .card {
     background-color: white;
     padding: 1.5rem;
@@ -75,7 +74,7 @@ main {
     margin-top: 1rem;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     background-color: #0d3b66;
