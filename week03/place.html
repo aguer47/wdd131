@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Kampala, Uganda — a vibrant city known for its rich culture, warm hospitality and lively markets. Explore attractions, local food, nightlife and hidden gems.">
+    <meta name="author" content="Majok Aguer">
+    <title>Kampala Uganda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kampala</h1>
+    </header>
+    <main>
+        <section class="hero-section">
+            <picture>
+                <source media="(min-width: 1500px)" srcset="images/kampala-large.webp">
+                <img src="images/kampala-small.webp" alt="Kampala landscape">
+            </picture>
+            <div class="overlay">
+                <div class="info">
+                    <section class="card data">
+                        <h2>Data</h2>
+                        <table>
+                            <tr>
+                                <td>Area:</td>
+                                <td>241,038 km²</td>
+                            </tr>
+                            <tr>
+                                <td>Population:</td>
+                                <td>45,850,000</td>
+                            </tr>
+                            <tr>
+                                <td>Capital:</td>
+                                <td>Kampala</td>
+                            </tr>
+                            <tr>
+                                <td>Languages:</td>
+                                <td>English, Kiswahili, Luganda</td>
+                            </tr>
+                            <tr>
+                                <td>Currency:</td>
+                                <td>UGX</td>
+                            </tr>
+                            <tr>
+                                <td>Time Zone:</td>
+                                <td>UTC+3</td>
+                            </tr>
+                            <tr>
+                                <td>Calling Code:</td>
+                                <td>+256</td>
+                            </tr>
+                            <tr>
+                                <td>Internet TLD:</td>
+                                <td>.ug</td>
+                            </tr>
+                        </table>
+
+                    </section>
+                    <section class="card weather">
+                        <h2>Weather <span class="weather-icon"></span></h2>
+                        <div class="weather-svg">
+                            <img src="images/icon.svg" alt="weather icon" class="icon">
+                        </div>
+                        <table>
+                            <tr>
+                                <td>Temperature:</td>
+                                <td><span id="temperature">22</span>°C / <span id="tempF">72</span>°F</td>
+                            </tr>
+                            <tr>
+                                <td>Conditions:</td>
+                                <td>Partly Cloudy</td>
+                            </tr>
+                            <tr>
+                                <td>Wind:</td>
+                                <td><span id="windSpeed">5</span> km/h</td>
+                            </tr>
+                            <tr>
+                                <td>Wind Chill:</td>
+                                <td id="windChill">N/A</td>
+                            </tr>
+                        </table>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> ✨ Majok Aguer ✨ | Uganda</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
