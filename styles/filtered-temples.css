@@ -45,6 +45,12 @@ main {
     margin: auto;
     padding: 1rem;
 }
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
 
 .grid-container {
     display: grid;
