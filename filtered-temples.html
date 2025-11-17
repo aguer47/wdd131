@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description"
+            content="A Latter-day Saint temples with images, dedication dates, locations and area size.">
+        <meta name="author" content="Majok Aguer">
+
+        <title>Filtered Temples</title>
+
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <button id="menu" aria-label="Menu Button">☰</button>
+
+            <nav class="navigation">
+                <a href="#" data-filter="home">Home</a>
+                <a href="#" data-filter="old">Old</a>
+                <a href="#" data-filter="new">New</a>
+                <a href="#" data-filter="large">Large</a>
+                <a href="#" data-filter="small">Small</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Temple Album</h1>
+
+            <section id="temple-cards" class="grid-container"></section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Majok Aguer | Uganda</p>
+            <p id="lastModified"></p>
+        </footer>
+
+        <script src="scripts/filtered-temples.js" defer></script>
+
+    </body>
+
+</html>
