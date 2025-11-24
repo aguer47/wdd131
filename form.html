@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Majok Aguer">
+        <meta name="description" content="Product Review form for rating, product used and written feedback.">
+
         <title>Product Review</title>
         <link rel="stylesheet" href="styles/form.css">
     </head>
@@ -25,30 +27,36 @@
                         <option value="" disabled selected>Select a Product ...</option>
                     </select>
 
-                
+                    
                     <div class="rating-group">
                         <p class="rating-label">Overall Rating</p>
                         <div class="stars-row">
-                            <label>
-                                <input type="radio" name="rating" value="1" required>
+
+                            <label for="rating1">
                                 ★
+                                <input type="radio" id="rating1" name="rating" value="1" required>
                             </label>
-                            <label>
-                                <input type="radio" name="rating" value="2">
+
+                            <label for="rating2">
                                 ★★
+                                <input type="radio" id="rating2" name="rating" value="2">
                             </label>
-                            <label>
-                                <input type="radio" name="rating" value="3">
+
+                            <label for="rating3">
                                 ★★★
+                                <input type="radio" id="rating3" name="rating" value="3">
                             </label>
-                            <label>
-                                <input type="radio" name="rating" value="4">
+
+                            <label for="rating4">
                                 ★★★★
+                                <input type="radio" id="rating4" name="rating" value="4">
                             </label>
-                            <label>
-                                <input type="radio" name="rating" value="5">
+
+                            <label for="rating5">
                                 ★★★★★
+                                <input type="radio" id="rating5" name="rating" value="5">
                             </label>
+
                         </div>
                     </div>
 
@@ -63,18 +71,37 @@
                             <span class="small-text">(Check all that apply)</span>
                         </p>
 
-                        <label><input type="checkbox" name="features" value="Durability"> Durability</label>
-                        <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
-                        <label><input type="checkbox" name="features" value="Performance"> Performance</label>
-                        <label><input type="checkbox" name="features" value="Design"> Design</label>
+                        <label for="durability">
+                            <input type="checkbox" id="durability" name="features" value="Durability">
+                            Durability
+                        </label>
+
+                        <label for="ease">
+                            <input type="checkbox" id="ease" name="features" value="Ease of Use">
+                            Ease of Use
+                        </label>
+
+                        <label for="performance">
+                            <input type="checkbox" id="performance" name="features" value="Performance">
+                            Performance
+                        </label>
+
+                        <label for="design">
+                            <input type="checkbox" id="design" name="features" value="Design">
+                            Design
+                        </label>
                     </div>
 
-                    
-                    <label for="reviewText">Written Review <span class="small-text">(Optional)</span></label>
+                
+                    <label for="reviewText">Written Review
+                        <span class="small-text">(Optional)</span>
+                    </label>
                     <textarea id="reviewText" name="reviewText" rows="4"></textarea>
 
                     
-                    <label for="username">Your Name <span class="small-text">(Optional)</span></label>
+                    <label for="username">Your Name
+                        <span class="small-text">(Optional)</span>
+                    </label>
                     <input type="text" id="username" name="username">
 
                     
@@ -85,15 +112,12 @@
         </main>
 
         <footer>
-            <p>&copy; 2025 ✨Majok Aguer✨ | Uganda😊</p>
-            <p>Last Modification: <span id="lastModified"></span></p>
+            <p>&copy; <span id="currentyear"></span> ✨ Majok Aguer ✨ | Uganda |</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
         </footer>
 
-        <script>
-            document.getElementById("lastModified").textContent = document.lastModified;
-        </script>
-
-        <script src="scripts/form.js"></script>
+        
+        <script src="scripts/form.js" defer></script>
 
     </body>
 
