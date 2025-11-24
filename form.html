@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Majok Aguer">
+        <title>Product Review</title>
+        <link rel="stylesheet" href="styles/form.css">
+    </head>
+
+    <body>
+
+        <header class="page-header">
+            <h1>Product Review</h1>
+        </header>
+
+        <main>
+            <section class="form-card">
+                <form method="get" action="review.html" id="reviewForm">
+
+                    
+                    <label for="product">Product Name</label>
+                    <select id="product" name="product" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                    </select>
+
+                
+                    <div class="rating-group">
+                        <p class="rating-label">Overall Rating</p>
+                        <div class="stars-row">
+                            <label>
+                                <input type="radio" name="rating" value="1" required>
+                                ★
+                            </label>
+                            <label>
+                                <input type="radio" name="rating" value="2">
+                                ★★
+                            </label>
+                            <label>
+                                <input type="radio" name="rating" value="3">
+                                ★★★
+                            </label>
+                            <label>
+                                <input type="radio" name="rating" value="4">
+                                ★★★★
+                            </label>
+                            <label>
+                                <input type="radio" name="rating" value="5">
+                                ★★★★★
+                            </label>
+                        </div>
+                    </div>
+
+                    
+                    <label for="installDate">Date of Installation</label>
+                    <input type="date" id="installDate" name="installDate" required>
+
+                    
+                    <div class="features-section">
+                        <p class="features-title">
+                            Which features did you find useful in the product? <br>
+                            <span class="small-text">(Check all that apply)</span>
+                        </p>
+
+                        <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+                        <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                        <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+                        <label><input type="checkbox" name="features" value="Design"> Design</label>
+                    </div>
+
+                    
+                    <label for="reviewText">Written Review <span class="small-text">(Optional)</span></label>
+                    <textarea id="reviewText" name="reviewText" rows="4"></textarea>
+
+                    
+                    <label for="username">Your Name <span class="small-text">(Optional)</span></label>
+                    <input type="text" id="username" name="username">
+
+                    
+                    <input type="submit" value="Post Review" class="submit-btn">
+
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 ✨Majok Aguer✨ | Uganda😊</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </footer>
+
+        <script>
+            document.getElementById("lastModified").textContent = document.lastModified;
+        </script>
+
+        <script src="scripts/form.js"></script>
+
+    </body>
+
+</html>
