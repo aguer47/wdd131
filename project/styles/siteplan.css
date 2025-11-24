@@ -1,0 +1,79 @@
+/* Basic Page Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #2E8B57;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #2E8B57;
+    margin-bottom: 20px;
+}
+
+.section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border-left: 6px solid #2E8B57;
+}
+
+
+.wireframe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+.wf-box {
+    border: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+    font-family: monospace;
+    background: #fafafa;
+}
+
+.large {
+    height: 140px;
+}
+
+
+.desktop {
+    margin-top: 20px;
+}
+
+.header-row {
+    height: 60px;
+}
+
+.split-row {
+    display: flex;
+    gap: 15px;
+}
+
+.half {
+    flex: 1;
+    height: 120px;
+}
+
+.wf-row {
+    display: flex;
+    gap: 15px;
+}
+
+.third {
+    flex: 1;
+    height: 110px;
+}
