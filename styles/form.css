@@ -117,3 +117,33 @@ footer {
     padding: 1rem;
     color: #444;
 }
+
+/* media querry */
+@media screen and (minmax: 728px) {
+    .form-card {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .stars-row {
+        gap: 0.5rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    textarea {
+        font-size: 1rem;
+    }
+
+    .submit-btn {
+        font-size: 1.1rem;
+        padding: 0.9rem;
+    }
+}

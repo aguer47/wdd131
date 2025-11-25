@@ -25,3 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         productSelect.appendChild(option);
     });
 });
+
+// Footer Content
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
